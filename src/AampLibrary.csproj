@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Copyright>(c) Syroot, GingerAvalanche, and KillzXGaming, licensed under GPL-3.0-or-later</Copyright>
+    <TargetFramework>net5.0</TargetFramework>
+	<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>KillzXGaming and Syroot. (Updated by ArchLeaders)</Authors>
+    <Description>Updated version of KillzXGaming's AampLibrary</Description>
+    <PackageProjectUrl>https://github.com/ArchLeaders/NCF-Library/tree/master/AampLibrary</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/ArchLeaders/NCF-Library/tree/master/AampLibrary</RepositoryUrl>
+    <PackageTags>aamp;parameterio;botw;nintendo;zelda</PackageTags>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<VersionPrefix>1.0.10</VersionPrefix>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\AampHashedNames" />
+    <EmbeddedResource Include="Data\AampHashedNamesNumbered" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SharpYaml" Version="1.9.1" />
+    <PackageReference Include="Syroot.BinaryData" Version="5.2.2" />
+    <PackageReference Include="Syroot.Maths" Version="1.5.3" />
+  </ItemGroup>
+
+
+</Project>
